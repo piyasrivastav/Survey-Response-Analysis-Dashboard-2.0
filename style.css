@@ -1,0 +1,176 @@
+body {
+  font-family: Arial;
+  margin: 20px;
+  background: #f5f7fa;
+}
+
+.controls {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.dashboard {
+  display: flex;
+  gap: 20px;
+}
+
+/* 🔥 IMPORTANT: CONTROL GRAPH HEIGHT */
+.chart-section {
+  width: 60%;
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+
+  /* 🔥 Increase height */
+  height: 100%;
+}
+
+/* Make canvas fill properly */
+.chart-section canvas {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.chart-section canvas {
+  max-height: 100%;
+}
+
+.details-section {
+  width: 40%;
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+
+/* CONTROLS WRAPPER */
+.controls {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+/* DROPDOWN STYLE */
+.dropdown {
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background: white;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* HOVER EFFECT */
+.dropdown:hover {
+  border-color: #5f6bdc;
+  box-shadow: 0 0 5px rgba(95, 107, 220, 0.4);
+}
+
+/* FOCUS EFFECT */
+.dropdown:focus {
+  outline: none;
+  border-color: #5f6bdc;
+  box-shadow: 0 0 6px rgba(95, 107, 220, 0.6);
+}
+
+/* BUTTON BASE */
+.btn {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: white;
+}
+
+/* PRIMARY BUTTON */
+.btn.primary {
+  background: linear-gradient(135deg, #5f6bdc, #7c4bb3);
+}
+
+/* SECONDARY BUTTON */
+.btn.secondary {
+  background: linear-gradient(135deg, #00b894, #00cec9);
+}
+
+/* BUTTON HOVER */
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 12px rgba(0,0,0,0.2);
+}
+
+/* BUTTON CLICK */
+.btn:active {
+  transform: scale(0.96);
+}
+
+/* HEADER UPGRADE */
+.header {
+  background: linear-gradient(135deg, #5f6bdc, #7c4bb3);
+  color: white;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+/* TITLE */
+.header h2 {
+  margin: 0;
+}
+
+/* SMOOTH TRANSITIONS */
+* {
+  transition: all 0.2s ease;
+}
+
+.footer {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 14px;
+  color: #555;
+  padding: 10px;
+  border-top: 1px solid #ddd;
+}
+
+
+/* STATS CONTAINER */
+.stats {
+  display: flex;
+  gap: 20px;
+  margin: 20px 0;
+}
+
+/* EACH CARD */
+.stat-card {
+  flex: 1;
+  background: #e3e6ee;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+/* HOVER EFFECT */
+.stat-card:hover {
+  transform: translateY(-3px);
+}
+
+/* LABEL */
+.stat-card span {
+  font-size: 14px;
+  color: #555;
+}
+
+/* NUMBER */
+.stat-card h3 {
+  margin: 10px 0 0;
+  font-size: 26px;
+  color: #333;
+}
