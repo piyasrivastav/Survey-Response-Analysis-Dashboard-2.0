@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Survey Response Analysis Dashboard</title>
+
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+
+  <!-- PDF -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- HEADER -->
+<div class="header">
+  <div class="header-content">
+    <div>
+      <h2>Survey Response Analysis Dashboard</h2>
+      <p>Effect of Spiritual and Cultural Communication on Youths - Varanasi</p>
+    </div>
+  </div>
+</div>
+
+<!-- CONTROLS -->
+<div class="controls">
+
+  <select id="questionSelect" class="dropdown"></select>
+
+  <select id="collegeFilter" class="dropdown">
+    <option value="All">All Colleges</option>
+    <option value="Banaras Hindu University">BHU</option>
+    <option value="MGKVP">MGKVP</option>
+    <option value="Sampurnanad Sanskrit Vishwavidyalaya">SSU</option>
+    <option value="Arya Mahila PG college">AMPG</option>
+  </select>
+
+  <select id="chartType" class="dropdown">
+    <option value="bar">Bar Chart</option>
+    <option value="line">Line Chart</option>
+  </select>
+
+  <button class="btn primary" onclick="downloadImage()">Download Image</button>
+  <button class="btn secondary" onclick="downloadPDF()">Download PDF</button>
+
+</div>
+
+<!-- STATS -->
+<div class="stats">
+
+  <div class="stat-card">
+    <span>Total Questions</span>
+    <h3 id="totalQ">0</h3>
+  </div>
+
+  <div class="stat-card">
+    <span>Total Responses</span>
+    <h3 id="totalR">0</h3>
+  </div>
+
+  <div class="stat-card">
+    <span>Age Groups</span>
+    <h3 id="ageGroups">0</h3>
+  </div>
+
+</div>
+
+<!-- DASHBOARD -->
+<div class="dashboard">
+
+  <!-- GRAPH -->
+  <div class="chart-section">
+    <canvas id="chart"></canvas>
+  </div>
+
+  <!-- DETAILS -->
+  <div class="details-section">
+    <h3>Current Question Details</h3>
+
+    <div class="question-box" id="questionText"></div>
+
+    <div class="options-box" id="optionsBox"></div>
+  </div>
+
+</div>
+
+<!-- SCRIPT -->
+<script src="app.js"></script>
+
+</body>
+
+<footer class="footer">
+  © Piya Srivastava 2026
+</footer>
+</html>
